@@ -1,0 +1,15 @@
+meta {
+  name: Get weather by zip code
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/api/weather/:zipcode
+  body: none
+  auth: none
+}
+
+params:path {
+  zipcode: 96815
+}

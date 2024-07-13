@@ -1,0 +1,31 @@
+meta {
+  name: GraphQL weather by zip code
+  type: graphql
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/graphql
+  body: graphql
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:graphql {
+  query Weather($zip: String) {
+    weather(zip: $zip) {
+      zip
+      tempC
+      weather
+    }
+  }
+}
+
+body:graphql:vars {
+  {
+    "zip": "96815"
+  }
+}

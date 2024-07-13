@@ -1,0 +1,34 @@
+meta {
+  name: Update weather by zipcode
+  type: graphql
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/api/graphql
+  body: graphql
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:graphql {
+  mutation UpdateWeather($data: LocationWeatherInput) {
+    weather(data: $data) {
+      zip
+      tempC
+      weather
+    }
+  }
+}
+
+body:graphql:vars {
+  {
+    "data": {
+      "zip": "96815",
+      "weather": "cloudy"
+    }
+  }
+}
