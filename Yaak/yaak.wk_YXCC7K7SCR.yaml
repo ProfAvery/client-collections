@@ -1,0 +1,14 @@
+type: workspace
+model: workspace
+id: wk_YXCC7K7SCR
+createdAt: 2025-07-19T01:50:08.046869400
+updatedAt: 2025-07-19T01:50:08.046870100
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Sample Next.js
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0

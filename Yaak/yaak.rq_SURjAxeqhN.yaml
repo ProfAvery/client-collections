@@ -1,0 +1,26 @@
+type: http_request
+model: http_request
+id: rq_SURjAxeqhN
+createdAt: 2025-07-19T04:51:42.184245
+updatedAt: 2025-07-19T04:54:11.675944100
+workspaceId: wk_YXCC7K7SCR
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get weather by zip code
+sortPriority: -1752900702178.0
+url: http://localhost:3000/api/v1/weather/:zipcode
+urlParameters:
+- enabled: true
+  name: :zipcode
+  value: '96815'
+  id: y6mtyJvU9C
+- enabled: false
+  name: ''
+  value: ''
+  id: pyIrD4IKJn
